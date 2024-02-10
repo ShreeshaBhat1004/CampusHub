@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    const firebaseConfig = {
+  apiKey: "AIzaSyCP1Z1qaK-MjlhXrS1EOzaSKKdpXsMvbnE",
+  authDomain: "campus-a3043.firebaseapp.com",
+  projectId: "campus-a3043",
+  storageBucket: "campus-a3043.appspot.com",
+  messagingSenderId: "300494360526",
+  appId: "1:300494360526:web:27ce855e8a38be32b0659f",
+  measurementId: "G-5VGJ7FZ6BT"
+};
+<script src="https://www.gstatic.com/firebasejs/YOUR_VERSION/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/YOUR_VERSION/firebase-auth.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
@@ -24,3 +36,26 @@
     </div>
 </body>
 </html>
+<script>
+// Initialize Firebase (using your config from earlier)
+firebase.initializeApp(firebaseConfig);
+
+// Handle form submission
+const signInForm = document.getElementById('sign-in-form');
+signInForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent page refresh on submit
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(() => {
+      // Sign-in successful,  redirect the user to their profile or homepage
+      window.location.href = "your-profile-page.html"; 
+    })
+    .catch((error) => {
+      // Sign-in failed, display an error message
+      console.log(error); // Check the browser console for specific error
+    });
+});
+
+</script>
