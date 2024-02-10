@@ -1,107 +1,64 @@
-/*body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-main {
-    margin-top: 30px;
-}
-
-.overview {
-    display: flex; /* Arrange info boxes horizontally */
-    justify-content: space-around;
-}
-
-.info-box {
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 30%; /* Adjust for more or fewer boxes */
-    text-align: center;
-}
-
-
+/* General Styling */
 body {
-    background-color: #f8f8f8;
-    color: #333; /* Dark text */
+    font-family: sans-serif;
+    margin: 0; 
+    padding: 0;
 }
 
+/* Header */
 header {
-    background-color: #4285f4; /* Blue header */
+    background-color: #0067C5; /* Example blue color */
     color: white;
+    padding: 1em 0;  
 }
 
-.info-box {
-   background-color: white;
-   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-   border-radius: 5px;
-}
-
-nav a {
-  color: #2c3e50; /* Dark Link Color*/
-}
-
-nav a:hover {
-  color: #4285f4; /* Header color on hover */
-}
-*/
-
-body {
-    font-family: sans-serif;
-    margin: 0;
+nav {
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    min-height: 100vh; /* Full viewport height */
-}
-
-header {
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; 
+    max-width: 960px; /* Centers content */
+    margin: 0 auto; 
 }
 
-.logo h1 {
-    margin: 0;
+.logo {
+    font-weight: bold;
 }
 
-nav ul {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-nav li a {
-    display: block;
-    padding: 10px;
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: #FFC300; /* Example yellow color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #333;
 }
 
-main {
-    flex: 1; /* Occupy remaining space */
-    display: flex;
+/* Hero Section */
+.hero {
+    background-color: #F0F4F8; /* Light background */
+    text-align: center;
+    padding: 3em 0;
 }
 
-/* Style for stories, feed, aside, posts, etc. would go here */ 
+/* Featured Section */
+.featured {
+    padding: 2em 0;
+}
+
+.cards {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Add styling for individual opportunity cards as needed */
