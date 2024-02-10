@@ -37,3 +37,28 @@ main {
     width: 30%; /* Adjust for more or fewer boxes */
     text-align: center;
 }
+
+
+body {
+    background-color: #f8f8f8;
+    color: #333; /* Dark text */
+}
+
+header {
+    background-color: #4285f4; /* Blue header */
+    color: white;
+}
+
+.info-box {
+   background-color: white;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+   border-radius: 5px;
+}
+
+nav a {
+  color: #2c3e50; /* Dark Link Color*/
+}
+
+nav a:hover {
+  color: #4285f4; /* Header color on hover */
+}
