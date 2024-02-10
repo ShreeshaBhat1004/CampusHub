@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Hub</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Campus<span>Hub</span></h1>
 
-    <header>
-        <nav>
-            <div class="logo"><img src="logo.jpg" alt="Logo" width="75" height="50"></div> 
-           <ul class="a">
-               <li><a target="_blank" href="https://unstop.com">Opportunities</a></li>
-               <li><a target="_blank" href="http://192.168.137.1:3000/webpage/Calendar/cal.html">Calendar</a></li>
-            </ul>
-            <ul class="b">
-                <li class="button"><a target="_blank" href="http://192.168.137.1:3000/webpage/Login/login.html">Login</a></li>
-                <li><a target="_blank" href="http://192.168.137.1:3000/webpage/Signup/signup.html" class="button">Sign Up</a></li> 
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="#" style="color: rgb(255, 0, 13);">Home</a></li>
+          <li><a class="navbar-link" href="#">About Us</a></li>
+          <li><a class="navbar-link" href="#">Blog</a></li>
+          <li><a class="navbar-link" href="#">Gallery</a></li>
+          <li><a class="navbar-link" href="#" target="_blank">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+      </div>
     </header>
 
-    <section class="hero">
-        <h1>Discover Your Potential</h1> 
-        <p>Find internships, competitions, and more.</p>
-        <input type="text" placeholder="Search for opportunities"> 
+    <!-- ======================================== 
+          Our Main Hero Section Start  
+    ========================================  -->
+
+    <section class="section-services container">
+      <div class="hero">
+        <h1>Best Friend</h1>
+        <p>Friendship is a special bond that can help you sail through the most brutal storms of life. In you, my friend, 
+          I have found a support that's unwavering and unconditional. No matter where we stay, I always know you are the one 
+          I can always count on. So, a big thank you to you for being my bosom buddy for life! 
+          A friend is someone who understands your past, believes in your future and accepts you just the way you are. 
+          Good friends are like stars. You don't always see them, but you know that they are always there.
+        </p>
+        <button class="btn" type="submit">Time Pass</button>
+      </div>
     </section>
 
-    <section class="featured">
-        <h2>Featured Opportunities</h2> 
-        <div class="cards"> 
-            <pa class="button"><a href="http://192.168.137.1:3000/swipe/swipe.html">Find team mates</a></pa>
-            <pa><a href="http://192.168.137.1:3000/webpage/Notification/not.html">Notification</a></pa>
-        </div>
-    </section>
-
-    <footer>
-        </footer>
-
-</body>
+    <!-- ======================================== 
+          Our JavaScript Section Start  
+    ========================================  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="home.js"></script>
+  </body>
 </html>
