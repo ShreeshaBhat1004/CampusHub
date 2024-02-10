@@ -1,0 +1,52 @@
+.calendar-container {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #000000; /* Black background */
+    color: #f0f0f0; /* Light text color */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background-color: #ffcc00; /* Yellow buttons */
+    color: #000000; /* Black button text */
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.calendar-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-body th,
+.calendar-body td {
+    border: 1px solid #f0f0f0; /* Light borders */
+    padding: 10px;
+    text-align: center;
+}
+
+.event {
+    background-color: #ffcc00;  /* Yellow for events */
+    color: #000000; /* Black event text */
+}
+
+.event-form {
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Light background for form */
+}
+
+.event-form input,
+.event-form button {
+    background-color: #ffffff; /* White input backgrounds */
+    color: #000000; /* Black text */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
