@@ -1,0 +1,73 @@
+/* General Styling */
+body {
+    font-family: sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: black; /* Example blue color */
+    color: white;
+    padding: 1em 0;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px; /* Centers content */
+    margin: 0 auto; 
+}
+
+.logo {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    color: white;
+}
+   b{
+    color: black
+}
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: #FFC300; /* Example yellow color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #080808; /* Light background */
+    text-align: center;
+    padding: 3em 0;
+    color: white;
+}
+
+/* Featured Section */
+.featured {
+    padding: 2em 0;
+    color:#FFC300;
+    background-color: #080808;
+}
+.cards {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust as needed */
+    gap: 20px;
+}
+
+/* Add styling for individual opportunity cards as needed */
