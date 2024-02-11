@@ -1,0 +1,45 @@
+.profile-tab {
+    display: flex;
+    align-items: center; 
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    margin-bottom: 5px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; /* Centers the icon */
+    text-align: center;
+    color: #555;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    background-color: #333;
+}
